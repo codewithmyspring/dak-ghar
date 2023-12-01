@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { GiPostOffice } from "react-icons/gi";
 import "./navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
+  const ref = useRef(null);
+  const doClick = () => ref.current?.scrollIntoView({behavior: 'smooth'})
 const [showMediaIcons, setShowMediaIcons] = useState(false);
   return (
     <>
@@ -16,10 +18,10 @@ const [showMediaIcons, setShowMediaIcons] = useState(false);
         {/* menu part */}
         <div className={showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"}>
             <ul>
-                <li><NavLink to="/">Home</NavLink></li>
-                <li><NavLink to="/">Services</NavLink></li>
+                <li><NavLink to="/HomePage">Home</NavLink></li>
+                <li><NavLink to="#">Services</NavLink></li>
                 <li><NavLink to="/">DNK</NavLink></li>
-                <li><NavLink to="/">Contact Us</NavLink></li>
+                <li onClick={doClick}><NavLink to="#contact">Contact Us</NavLink></li>
 
                 <button className='btn' style={buttonStyle}>
                 <a href="#">Register/SignIn</a>

@@ -18,23 +18,23 @@ const Services= () => {
         <div style={serviceStyle}>
           <h2>Buy Stamps</h2>
           <p><br/></p>
-          <a href='#'><img src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/india-post-buy-stamps-Icon.svg" alt="Service 1" style={imageStyle} /></a>
+          <a href='/BuyStamps'><img src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/india-post-buy-stamps-Icon.svg" alt="Service 1" style={imageStyle} /></a>
         </div>
 
         {/* Service 3 */}
         <div style={serviceStyle}>
           <h2>Locate Post Office</h2>
           <p><br/></p>
-          <a href='#'><img src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/Locate_your_post_office_Icon.svg" alt="Service 1" style={imageStyle} /></a>
+          <li>< Link to='/LocatePostOffice'><img src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/Locate_your_post_office_Icon.svg" alt="Service 1" style={imageStyle} /></Link></li>
         </div>
         
         {/* Service 4 */}
         <div style={serviceStyle}>
           <h2>Calculate Postage</h2>
           <p><br/></p>
-          <Link to='../PostageCalculator/PostageCalculator'><img src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/Calculator_Icon.svg" alt="Service 1" style={imageStyle} /></Link>
+          <li><Link to="/PostageCalculator"><img src="https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/Calculator_Icon.svg" alt="Service 1" style={imageStyle} /></Link></li>
         </div>
-      </div>
+        </div>
     </section>
   );
 };
