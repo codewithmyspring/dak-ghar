@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react'
 import { GiPostOffice } from "react-icons/gi";
 import "./navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 function Navbar() {
   const ref = useRef(null);
@@ -18,9 +18,9 @@ const [showMediaIcons, setShowMediaIcons] = useState(false);
         {/* menu part */}
         <div className={showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"}>
             <ul>
-                <li><NavLink to="/HomePage">Home</NavLink></li>
-                <li><NavLink to="#">Services</NavLink></li>
-                <li><NavLink to="/">DNK</NavLink></li>
+                <li><a href='/HomePage'>Home</a></li>
+                <li><Link to="#">Services</Link></li>
+                <li><Link to="/">DNK</Link></li>
                 <li onClick={doClick}><NavLink to="#contact">Contact Us</NavLink></li>
 
                 <button className='btn' style={buttonStyle}>

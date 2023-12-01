@@ -1,19 +1,15 @@
 import React from 'react';
 
 const Footer = () => {
-  const searchStyle = {
-    padding: '5px',
-    width: '150px',
-  };
 
   return (
     <footer style={footerStyle}>
       <div>
         <h1>Contact Information</h1>
-        <p>Dak Ghar Niryat Kendra</p>
-        <p>123 Main Street, City</p>
-        <p>Email: info@dakgharniryat.com</p>
-        <p>Phone: +1 234 567 890</p>
+        <p style={paragraphStyle}>Dak Ghar Niryat Kendra</p>
+        <p style={paragraphStyle}>123 Main Street, City</p>
+        <p style={paragraphStyle}>Email: info@dakgharniryat.com</p>
+        <p style={paragraphStyle}>Phone: +1 234 567 890</p>
       </div>
       <div>
         <h1>Services</h1>
@@ -54,9 +50,14 @@ const footerStyle = {
   fontSize: '15px',
 };
 
+const paragraphStyle = {
+  fontSize: '14px',
+  margin: '5px 0', 
+};
+
 const searchStyle = {
-  padding: '10px',
-  width: '200px',
+  padding: '5px',
+  width: '150px',
   borderRadius: '5px',
   border: '1px solid #ccc',
   marginRight: '2px',

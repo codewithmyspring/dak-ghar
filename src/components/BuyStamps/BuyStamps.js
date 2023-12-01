@@ -79,6 +79,10 @@ const BuyStamps = () => {
     });
   };
 
+  const paraFont={
+    fontSize:'13px',
+  };
+
   return (
     <div>
       <Navbar/>
@@ -87,7 +91,7 @@ const BuyStamps = () => {
         {stampsData.map((stamp) => (
           <div key={stamp.id} className="stamp-box">
             <img src={stamp.imageSrc} alt={stamp.name} />
-            <p>{stamp.name}</p>
+            <p style={paraFont}>{stamp.name}</p>
             <button onClick={() => addToCart(stamp)}>Add to Cart</button>
             <button onClick={() => removeFromCart(stamp.id)}>Remove from Cart</button>
           </div>

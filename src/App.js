@@ -14,6 +14,7 @@ function App() {
         <Route path="/BuyStamps" element={<BuyStamps />} />
         <Route path="/LocatePostOffice" element={<LocatePostOffice />} />
         <Route path="/PostageCalculator" element={<PostageCalculator />} />
+        <Route path="/HomePage" element={<HomePage />} />
       </Routes>
     </Router>
   );

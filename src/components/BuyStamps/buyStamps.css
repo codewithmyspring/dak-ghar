@@ -1,11 +1,36 @@
 /* buyStamps.css */
 
 .buy-stamps-container {
-  margin-left:150px;
-  width: 80%;
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 25px;
+}
+
+.stamps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.stamp-box {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.stamp-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 .stamps-container {
@@ -23,19 +48,6 @@
   text-align: center;
 }
 
-.stamp-box button {
-  background-color: #3498db;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  cursor: pointer;
-  font-size: 0.9em;
-  border-radius: 15px;
-  margin-top: 10px;
-  margin-left:15px ;
-  margin-bottom: 10px;
-}
-
 .stamp-box img {
   width: 100%;
   height: 150px;
@@ -43,8 +55,19 @@
   border-bottom: 1px solid #ddd;
 }
 
+.stamp-box button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
 .cart-container {
-  margin-left: 40px;
   width: 300px;
 }
 
